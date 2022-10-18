@@ -201,7 +201,6 @@ export default function HomeHeroIllustration() {
         },
         offset
       )
-
       .add({
         targets: ".hero-animation .mono-gateway__loading",
         opacity: [1, 0],
@@ -212,30 +211,36 @@ export default function HomeHeroIllustration() {
         opacity: [0, 1],
         duration: 500,
       })
-      .add({
-        targets: ".hero-animation__connect-line:nth-child(3) path",
-        opacity: [1, 0],
-        duration: 500,
-      })
-      .add({
-        targets: ".hero-animation__connect-line:nth-child(1) path",
-        opacity: [0, 1],
-        strokeDashoffset: ["188px", "397px"],
-        strokeDasharray: [200, 200],
-      })
+      .add(
+        {
+          targets: ".hero-animation__connect-line:nth-child(3) path",
+          opacity: [1, 0],
+          duration: 500,
+        },
+        offset
+      )
+      .add(
+        {
+          targets: ".hero-animation__connect-line:nth-child(1) path",
+          opacity: [0, 1],
+          strokeDashoffset: ["188px", "397px"],
+          strokeDasharray: [200, 200],
+        },
+        offset
+      )
       .add(
         {
           targets: ".hero-animation__connect-line:nth-child(1) path",
           strokeDasharray: ["5,5", "5,5"],
         },
-        "-=400"
+        "-=800"
       )
       .add(
         {
           targets: ".hero-animation .client-app__splash-screen-container",
           translateY: "-100%",
         },
-        `-=400`
+        `-=700`
       )
       .add(
         {
