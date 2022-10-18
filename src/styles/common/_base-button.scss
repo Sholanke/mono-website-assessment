@@ -1,0 +1,32 @@
+.base-button {
+  font-size: inherit;
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  padding: 0.8125rem 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 0.625rem;
+  font-size: 0.9375rem;
+  display: inline-flex;
+  gap: 4px;
+
+  &--primary {
+    @extend .base-button;
+  }
+
+  &--secondary {
+    @extend .base-button;
+    color: var(--text-black);
+    background-color: var(--bg-grey);
+  }
+
+  &--clear {
+    @extend .base-button;
+    background-color: transparent;
+    color: var(--text-black);
+  }
+}

@@ -1,0 +1,201 @@
+// --- DM SANS FONT FACE ---
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../assets/fonts/dm-sans/DMSans-MediumItalic.woff2') format('woff2'),
+        url('../../assets/fonts/dm-sans/DMSans-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../assets/fonts/dm-sans/DMSans-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/dm-sans/DMSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../assets/fonts/dm-sans/DMSans-Italic.woff2') format('woff2'),
+        url('../../assets/fonts/dm-sans/DMSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../assets/fonts/dm-sans/DMSans-BoldItalic.woff2') format('woff2'),
+        url('../../assets/fonts/dm-sans/DMSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../assets/fonts/dm-sans/DMSans-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/dm-sans/DMSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../assets/fonts/dm-sans/DMSans-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/dm-sans/DMSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+// --- DUPLICATE SANS FONT FACE ---
+@font-face {
+    font-family: 'Duplicate Sans';
+    src: url('../../assets/fonts/duplicate-sans/DuplicateSans-Light.eot');
+    src: local('Duplicate Sans Light'), local('DuplicateSans-Light'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Light.woff2') format('woff2'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Light.woff') format('woff'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Duplicate Sans';
+    src: url('../../assets/fonts/duplicate-sans/DuplicateSans-ThinItalic.eot');
+    src: local('Duplicate Sans Thin Italic'), local('DuplicateSans-ThinItalic'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-ThinItalic.woff2') format('woff2'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-ThinItalic.woff') format('woff'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Duplicate Sans';
+    src: url('../../assets/fonts/duplicate-sans/DuplicateSans-BoldItalic.eot');
+    src: local('Duplicate Sans Bold Italic'), local('DuplicateSans-BoldItalic'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-BoldItalic.woff2') format('woff2'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-BoldItalic.woff') format('woff'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Duplicate Sans';
+    src: url('../../assets/fonts/duplicate-sans/DuplicateSans.eot');
+    src: local('Duplicate Sans'), local('DuplicateSans'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans.woff2') format('woff2'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans.woff') format('woff'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Duplicate Sans';
+    src: url('../../assets/fonts/duplicate-sans/DuplicateSans-Medium.eot');
+    src: local('Duplicate Sans Medium'), local('DuplicateSans-Medium'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Medium.woff') format('woff'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Duplicate Sans';
+    src: url('../../assets/fonts/duplicate-sans/DuplicateSans-Italic.eot');
+    src: local('Duplicate Sans Italic'), local('DuplicateSans-Italic'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Italic.woff2') format('woff2'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Italic.woff') format('woff'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Duplicate Sans';
+    src: url('../../assets/fonts/duplicate-sans/DuplicateSans-HeavyItalic.eot');
+    src: local('Duplicate Sans Heavy Italic'), local('DuplicateSans-HeavyItalic'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-HeavyItalic.woff2') format('woff2'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-HeavyItalic.woff') format('woff'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Duplicate Sans';
+    src: url('../../assets/fonts/duplicate-sans/DuplicateSans-Thin.eot');
+    src: local('Duplicate Sans Thin'), local('DuplicateSans-Thin'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Thin.woff2') format('woff2'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Thin.woff') format('woff'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Duplicate Sans';
+    src: url('../../assets/fonts/duplicate-sans/DuplicateSans-Heavy.eot');
+    src: local('Duplicate Sans Heavy'), local('DuplicateSans-Heavy'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Heavy.woff2') format('woff2'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Heavy.woff') format('woff'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Duplicate Sans';
+    src: url('../../assets/fonts/duplicate-sans/DuplicateSans-Bold.eot');
+    src: local('Duplicate Sans Bold'), local('DuplicateSans-Bold'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Bold.woff') format('woff'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Duplicate Sans';
+    src: url('../../assets/fonts/duplicate-sans/DuplicateSans-LightItalic.eot');
+    src: local('Duplicate Sans Light Italic'), local('DuplicateSans-LightItalic'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-LightItalic.woff2') format('woff2'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-LightItalic.woff') format('woff'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Duplicate Sans';
+    src: url('../../assets/fonts/duplicate-sans/DuplicateSans-MediumItalic.eot');
+    src: local('Duplicate Sans Medium Italic'), local('DuplicateSans-MediumItalic'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-MediumItalic.woff2') format('woff2'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-MediumItalic.woff') format('woff'),
+        url('../../assets/fonts/duplicate-sans/DuplicateSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+

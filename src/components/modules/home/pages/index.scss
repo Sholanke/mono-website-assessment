@@ -1,0 +1,35 @@
+.home-page {
+  &__hero {
+    display: flex;
+    margin-top: 5rem;
+
+    &__text,
+    &__illustration {
+      flex: 1;
+    }
+
+    &__illustration {
+      position: relative;
+    }
+
+    &__text {
+      flex: 1.5;
+
+      h1 {
+        font-weight: 500;
+        font-size: 5.75rem;
+      }
+
+      p {
+        font-size: 1.625rem;
+        margin: 1.625rem 0 3rem 0;
+        line-height: 1.5;
+      }
+    }
+
+    &__actions {
+      display: flex;
+      gap: 15px;
+    }
+  }
+}
