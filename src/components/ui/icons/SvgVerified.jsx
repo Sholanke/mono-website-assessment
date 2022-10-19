@@ -9,7 +9,6 @@ export default function SvgVerified() {
         stroke-width="4"
         stroke-linecap="round"
         stroke-linejoin="round"
-        class="checkmark"
       ></path>
     </svg>
   );

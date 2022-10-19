@@ -3,8 +3,8 @@ import HomeHeroIllustration from "./HomeHeroIllustration";
 
 export default function HomeHero() {
   return (
-    <div className="section-container">
-      <div className="home-page__hero section-container__content">
+    <div className="home-page__hero section-container">
+      <div className="home-page__hero__content section-container__content">
         <div className="home-page__hero__text">
           <h1>Access real-time financial data</h1>
           <p>

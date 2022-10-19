@@ -13,7 +13,7 @@ export default function SvgLoader() {
   }, []);
 
   return (
-    <svg viewBox="0 0 24 24" fill="none" class="svg-spin">
+    <svg viewBox="0 0 24 24" fill="none" className="svg-spin">
       <path
         d="M12 1V6"
         stroke="white"

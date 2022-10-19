@@ -29,4 +29,19 @@
     background-color: transparent;
     color: var(--text-black);
   }
+
+  &--link {
+    color: var(--primary-color);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
 }

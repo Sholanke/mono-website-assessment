@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import anime from "animejs";
-import { SvgVerified, SvgLoader } from "../../../ui/icons/";
-import SvgDebit from "../../../ui/icons/SvgDebit";
+import { SvgVerified, SvgLoader, SvgDebit } from "../../../ui/icons/";
 import HeroAnimationPill from "./HomeHeroPill";
 
 export default function HomeHeroIllustration() {

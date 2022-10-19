@@ -2,11 +2,14 @@
 @import "./common/base-button";
 @import "./common/page";
 @import "./common/hero-animation";
+@import "./common/animation";
 
 :root {
   --text-black: #000;
+  --text-grey: #606060;
   --bg-grey: rgba(245, 245, 245);
   --primary-color: rgb(0, 85, 186);
+  --bg-grey: rgb(245, 245, 245);
   --bg-green: #61a945;
 }
 
@@ -23,6 +26,7 @@ h4,
 h5,
 h6 {
   font-family: "Duplicate Sans", "DM Sans", Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 body {

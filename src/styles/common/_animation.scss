@@ -1,0 +1,16 @@
+.fade-up {
+  animation-name: fadeRight;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeRight {
+  0% {
+    transform: translate(40px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
