@@ -1,24 +1,33 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import anime from "animejs";
 import { SvgVerified, SvgLoader, SvgDebit } from "../../../ui/icons/";
 import HeroAnimationPill from "./HomeHeroPill";
+import SvgPlay from "../../../ui/icons/SvgPlay";
 
-export default function HomeHeroIllustration() {
+export default function HomeHeroIllustration({ pageLoaded }) {
   const [selectedBankAccount, setSelectedBankAccount] = useState(false);
+  const tl = useRef();
 
   useEffect(() => {
     const duration = 1000;
     const offset = `-=${duration - 600}`;
 
-    const tl = anime.timeline({
+    tl.current = anime.timeline({
       easing: "easeOutExpo",
       duration,
+      autoplay: false,
     });
 
-    tl.add({
-      targets: ".hero-animation .client-app__splash-screen-container",
-      opacity: [0, 1],
-    })
+    tl.current
+      .add({
+        targets: ".hero-animation",
+        translateX: [400, 0],
+        opacity: [0, 1],
+      })
+      .add({
+        targets: ".hero-animation .client-app__splash-screen-container",
+        opacity: [0, 1],
+      })
       .add(
         {
           targets: ".hero-animation .mouse",
@@ -250,6 +259,10 @@ export default function HomeHeroIllustration() {
       );
   }, []);
 
+  useEffect(() => {
+    if (pageLoaded) tl.current.play();
+  }, [pageLoaded]);
+
   return (
     <>
       <div className="hero-animation">
@@ -396,6 +409,14 @@ export default function HomeHeroIllustration() {
           </svg>
         </div>
       </div>
+
+      <button
+        className="hero-animation-play-btn"
+        onClick={() => tl.current.restart()}
+      >
+        Replay
+        <SvgPlay />
+      </button>
     </>
   );
 }

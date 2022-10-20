@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import DefaultLayout from "../../../ui/layout/DefaultLayout";
 import HomeApi from "../components/HomeApi";
 import HomeBusinesses from "../components/HomeBusinesses";
 import HomeFeatures from "../components/HomeFeatures";
 import HomeHero from "../components/HomeHero";
 import HomeIntegration from "../components/HomeIntegration";
+import HomeAccounts from "../components/HomeAccounts";
 import "./index.scss";
+import HomePerformance from "../components/HomePerformance";
+import HomeGetStarted from "../components/HomeGetStarted";
 
 const INTEGRATE_CONNECT_WIDGET = [
   {
@@ -81,14 +84,40 @@ const INTEGRATE_CONNECT_WIDGET = [
   },
 ];
 
+const STATEMENT_PAGES = [
+  {
+    title: "Create and share a Statement Page link",
+    screen:
+      "https://mono.co/_next/image?url=https%3A%2F%2Fmonoassets.com%2Ff%2F118499%2F2200x1300%2F79510ea215%2Fstatement-page-step-1.png&w=3840&q=75",
+  },
+  {
+    title: "The user clicks and shares contact details",
+    screen: "/assets/images/bank-statement.gif",
+  },
+  {
+    title: "The user selects bank and securely logs in",
+    screen: "/assets/images/select-bank.gif",
+  },
+  {
+    title: "Statements are instantly fetched and shared",
+    screen: "/assets/images/linkage-success.gif",
+  },
+];
+
 export default function HomePage() {
+  const [pageLoaded, setPageLoaded] = useState(false);
+
   return (
-    <DefaultLayout>
-      <HomeHero />
+    <DefaultLayout onPageLoad={() => setPageLoaded(true)}>
+      <HomeHero {...{ pageLoaded }} />
       <HomeBusinesses />
       <HomeFeatures />
       <HomeIntegration steps={INTEGRATE_CONNECT_WIDGET} />
       <HomeApi />
+      <HomeIntegration steps={STATEMENT_PAGES} bannerStyle />
+      <HomeAccounts />
+      <HomePerformance />
+      <HomeGetStarted />
     </DefaultLayout>
   );
 }

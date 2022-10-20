@@ -2,7 +2,7 @@ export const generateStickyMateClasses = (
   i,
   className = "active",
   startPoint,
-  remove = true
+  remove = true,
 ) => {
   startPoint = startPoint ? `${startPoint}vh` : `${i === 0 ? -2 : i * 2}00vh`;
 

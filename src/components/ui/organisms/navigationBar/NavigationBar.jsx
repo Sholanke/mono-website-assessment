@@ -5,7 +5,7 @@ export default function NavigationBar() {
   return (
     <nav className="navigation-bar section-container">
       <div className="navigation-bar__content section-container__content">
-        <img src="/assets/svg/logo.svg" alt="" srcset="" />
+        <img src="/assets/svg/logo.svg" alt="mono logo" />
 
         <div className="navigation-bar__links">
           <button className="base-button--clear">Why Mono</button>

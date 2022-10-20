@@ -1,3 +1,5 @@
+@import "./mixin";
+
 .section-container {
   padding-left: 20px;
   padding-right: 20px;
@@ -6,5 +8,9 @@
     max-width: 75rem;
     margin-right: auto;
     margin-left: auto;
+
+    @include mobile {
+      max-width: 500px;
+    }
   }
 }

@@ -1,0 +1,148 @@
+@import "../../../../styles/common/mixin";
+
+.footer {
+  background-color: #000;
+
+  &__start-building {
+    text-align: center;
+    padding: 7rem 0;
+
+    h3,
+    p {
+      color: #fff;
+    }
+
+    h3 {
+      font-size: 4rem;
+
+      @include mobile {
+        font-size: 3rem;
+      }
+    }
+
+    p {
+      font-size: 1.625rem;
+      margin: 1rem auto 2.8rem auto;
+      line-height: 1.7;
+      max-width: 700px;
+
+      @include mobile {
+        font-size: 1.3rem;
+      }
+    }
+
+    &__btn-holder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      @include mobile {
+        flex-direction: column;
+
+        button {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+
+      .base-button--secondary {
+        color: #fff;
+        background-color: #2020207d;
+      }
+    }
+  }
+
+  footer {
+    * {
+      color: #fff;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    border: 1px solid #303030;
+    border-right: 0;
+    border-left: 0;
+    padding: 4rem 0;
+
+    @include mobile {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+    }
+
+    p {
+      opacity: 0.6;
+    }
+
+    &__content {
+      &__link {
+        margin: 1.2rem 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          font-size: 0.9375rem;
+        }
+      }
+    }
+  }
+
+  &__base {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    &__logo-container {
+      display: flex;
+      align-items: center;
+
+      @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      img {
+        margin-right: 20px;
+        height: 1rem;
+      }
+    }
+
+    &__links {
+      display: flex;
+      align-items: center;
+
+      a {
+        font-size: 0.9375rem;
+
+        &::after {
+          content: "";
+          width: 4px;
+          height: 4px;
+          background-color: #ffff;
+          margin: 0 1.25rem;
+          border-radius: 100vh;
+        }
+
+        &:last-of-type {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -12,7 +12,9 @@
   border-radius: 0.625rem;
   font-size: 0.9375rem;
   display: inline-flex;
+  align-items: center;
   gap: 4px;
+  white-space: nowrap;
 
   &--primary {
     @extend .base-button;
@@ -42,6 +44,13 @@
     svg {
       width: 25px;
       height: 25px;
+      flex-shrink: 0;
     }
+  }
+
+  svg {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
   }
 }
