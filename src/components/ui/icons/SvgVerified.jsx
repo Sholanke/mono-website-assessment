@@ -6,9 +6,9 @@ export default function SvgVerified() {
       <path
         d="M2 14.5L11 25L39.5 2"
         stroke="white"
-        stroke-width="4"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></path>
     </svg>
   );

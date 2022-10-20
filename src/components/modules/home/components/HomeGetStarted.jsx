@@ -54,10 +54,11 @@ export default function HomeGetStarted() {
         </div>
 
         <div className="home-page__get-started__feature-list">
-          {FEATURES?.map((feature) => (
+          {FEATURES?.map((feature, i) => (
             <div
               className="home-page__get-started__feature-card"
               data-aos="fade-up"
+              key={i}
             >
               <div className="home-page__get-started__feature-card__text">
                 <img

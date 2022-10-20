@@ -52,7 +52,7 @@ export default function HomeApi() {
 
         <div className="home-page__api__features">
           {API_FEATURES?.map((feature, i) => (
-            <div className="home-page__api__feature" data-aos="fade-up">
+            <div className="home-page__api__feature" data-aos="fade-up" key={i}>
               <h3>{feature?.title}</h3>
               <p>{feature?.description}</p>
             </div>

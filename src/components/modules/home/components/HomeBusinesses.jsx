@@ -26,8 +26,8 @@ export default function HomeBusinesses() {
         <p>Businesses building with Mono Connect</p>
 
         <div className="home-page__businesses__logos">
-          {BUSINESSES?.map(({ src, alt }) => (
-            <figure>
+          {BUSINESSES?.map(({ src, alt }, i) => (
+            <figure key={i}>
               <img {...{ src, alt }} />
             </figure>
           ))}

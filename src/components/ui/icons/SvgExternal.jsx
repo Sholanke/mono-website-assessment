@@ -6,16 +6,16 @@ export default function SvgExternal() {
       <path
         d="M8 18L18 8"
         stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></path>
       <path
         d="M8 8H18V18"
         stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></path>
     </svg>
   );

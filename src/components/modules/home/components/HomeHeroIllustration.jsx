@@ -24,10 +24,13 @@ export default function HomeHeroIllustration({ pageLoaded }) {
         translateX: [400, 0],
         opacity: [0, 1],
       })
-      .add({
-        targets: ".hero-animation .client-app__splash-screen-container",
-        opacity: [0, 1],
-      })
+      .add(
+        {
+          targets: ".hero-animation .client-app__splash-screen-container",
+          opacity: [0, 1],
+        },
+        offset
+      )
       .add(
         {
           targets: ".hero-animation .mouse",
@@ -346,6 +349,7 @@ export default function HomeHeroIllustration({ pageLoaded }) {
               <div
                 className="mono-gateway-accounts__accounts-list__option"
                 data-active={selectedBankAccount && i === 0}
+                key={i}
               >
                 <HeroAnimationPill height={8} width={70} />
                 <HeroAnimationPill height={3} width={40} />

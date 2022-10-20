@@ -77,13 +77,13 @@ export default function Footer() {
 
         <footer>
           <ul className="footer__links">
-            {FOOTER_LINKS?.map((section) => (
-              <li>
+            {FOOTER_LINKS?.map((section, i) => (
+              <li key={i}>
                 <p>{section.title}</p>
 
                 <ul className="footer__links__content">
-                  {section?.links?.map((link) => (
-                    <li className="footer__links__content__link">
+                  {section?.links?.map((link, i) => (
+                    <li className="footer__links__content__link" key={i}>
                       <a href="/">{link.label}</a>
                     </li>
                   ))}
@@ -91,7 +91,7 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-          
+
           <div className="footer__base">
             <div className="footer__base__logo-container">
               <img

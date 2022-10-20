@@ -62,10 +62,20 @@ export default function PageLoader({ onPageLoad }) {
         ],
       });
 
-    tl.current.restart();
     tl.current.finished.then(() => {
       onPageLoad();
     });
+
+    const play = () => {
+      tl.current.restart();
+    };
+
+    if (document.readyState === "complete") {
+      play();
+    } else {
+      window.addEventListener("load", play);
+      return () => window.removeEventListener("load", play);
+    }
   }, []);
 
   return (
