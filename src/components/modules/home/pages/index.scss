@@ -273,7 +273,7 @@
     &__sandbox {
       height: 36rem;
       border-radius: 3rem;
-      background-color: #131419;
+      background-color: #282c3f;
       color: #fff;
       position: relative;
       display: flex;
@@ -647,6 +647,8 @@
 
       .home-page__get-started__feature-card {
         padding: 2.25rem;
+        z-index: 1;
+        position: relative;
 
         &__text {
           padding-bottom: 0;

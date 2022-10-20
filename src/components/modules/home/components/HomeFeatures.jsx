@@ -25,9 +25,12 @@ export default function HomeFeatures() {
   return (
     <div className="section-container home-page__home-features">
       <div className="section-container__content">
-        <h1>Features</h1>
+        <h1 data-aos="fade-up">Features</h1>
 
-        <div className="home-page__home-features__features-list">
+        <div
+          className="home-page__home-features__features-list"
+          data-aos="fade-up"
+        >
           {FEATURES?.map((feature, i) => (
             <div className="home-page__home-features__feature" key={i}>
               <img src={feature.src} alt="feature icon" />

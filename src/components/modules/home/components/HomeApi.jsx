@@ -38,21 +38,21 @@ export default function HomeApi() {
   return (
     <div className="section-container home-page__api">
       <div className="section-container__content">
-        <h3 className="home-page__api__title">
+        <h3 className="home-page__api__title" data-aos="fade-up">
           Fetching financial data after account linking
         </h3>
-        <p className="home-page__api__description">
+        <p className="home-page__api__description" data-aos="fade-up">
           We've built comprehensive API endpoints to retrieve financial data
           from your customers' bank accounts
         </p>
 
-        <a href="/" className="base-button--link">
+        <a href="/" className="base-button--link" data-aos="fade-up">
           See API Docs <SvgExternal />
         </a>
 
         <div className="home-page__api__features">
           {API_FEATURES?.map((feature, i) => (
-            <div className="home-page__api__feature">
+            <div className="home-page__api__feature" data-aos="fade-up">
               <h3>{feature?.title}</h3>
               <p>{feature?.description}</p>
             </div>

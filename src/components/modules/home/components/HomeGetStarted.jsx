@@ -26,9 +26,14 @@ export default function HomeGetStarted() {
   return (
     <div className="section-container home-page__get-started">
       <div className="section-container__content">
-        <h1 className="home-page__get-started__title">Getting Started</h1>
+        <h1 className="home-page__get-started__title" data-aos="fade-up">
+          Getting Started
+        </h1>
 
-        <div className="home-page__get-started__feature-card">
+        <div
+          className="home-page__get-started__feature-card"
+          data-aos="fade-up"
+        >
           <div className="home-page__get-started__feature-card__text">
             <img
               src="https://monoassets.com/f/118499/x/10923dd075/icon_powerful-apis-1.svg"
@@ -50,7 +55,10 @@ export default function HomeGetStarted() {
 
         <div className="home-page__get-started__feature-list">
           {FEATURES?.map((feature) => (
-            <div className="home-page__get-started__feature-card">
+            <div
+              className="home-page__get-started__feature-card"
+              data-aos="fade-up"
+            >
               <div className="home-page__get-started__feature-card__text">
                 <img
                   src="https://monoassets.com/f/118499/x/10923dd075/icon_powerful-apis-1.svg"

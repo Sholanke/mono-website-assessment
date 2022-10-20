@@ -66,19 +66,15 @@ export default function PageLoader({ onPageLoad }) {
     tl.current.finished.then(() => {
       onPageLoad();
     });
-
-    onPageLoad();
   }, []);
 
   return (
-    <>
-      {/* <div className="page-loader">
-    <div className="page-loader__mono-logo">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div className="page-loader">
+      <div className="page-loader__mono-logo">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-  </div> */}
-    </>
   );
 }

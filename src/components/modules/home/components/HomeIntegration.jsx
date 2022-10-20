@@ -17,8 +17,10 @@ export default function HomeIntegration({ steps, bannerStyle = false }) {
   return (
     <div className="section-container home-page__integration">
       <div className="section-container__content">
-        <h3 className="home-page__integration__title">How it works</h3>
-        <p className="home-page__integration__description">
+        <h3 className="home-page__integration__title" data-aos="fade-up">
+          How it works
+        </h3>
+        <p className="home-page__integration__description" data-aos="fade-up">
           Through a swift SDK and API integration, you can start retrieving
           verified data on account information, identity, real-time
           transactions, balances, and income.
